@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{FAA55496-FC5C-478F-AC2A-8B56279FB9A1}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FormsDemo</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Colors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CameraPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DisplayPicturePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DialogService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FormsDemo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainMenuPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MapPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+  </ItemGroup>
+</Project>
